@@ -5,9 +5,9 @@
 #include <string>
 
 struct Vertex {
-    float v1x, v1y, y1z;    //Vertex 1
-    float v2x, v2y, y2z;    //Vertex 2
-    float v3x, v3y, y3z;    //Vertex 3
+    float v1x, v1y, v1z;    //Vertex 1
+    float v2x, v2y, v2z;    //Vertex 2
+    float v3x, v3y, v3z;    //Vertex 3
     float nx, ny, nz;    // Normal
 };
 
@@ -25,6 +25,7 @@ public:
     void addVertex(const Vertex& vertex);
     Vertex getVertex(size_t index) const;
     size_t getVertexCount() const;
+    void printPart() const;
 
     // Destructor
     ~VertexPart();

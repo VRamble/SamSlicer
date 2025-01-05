@@ -25,7 +25,8 @@ $(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 # Clean up build artifacts
 clean:
-	rm -rf $(BUILD_DIR) $(TARGET)
+	rm -f $(BUILD_DIR)/*.o
+	rm -f $(TARGET)
 
 # Phony targets
 .PHONY: all clean

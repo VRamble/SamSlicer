@@ -1,0 +1,12 @@
+ASCII | Binary
+solid | 80 byte header (should not contain "solid")
+...
+facet normal ni nj nk           |   4 byte, 4 byte, 4 byte
+    outer loop                  
+        vertex v1x v1y v1z      |   4 byte, 4 byte, 4 byte
+        vertex v2x v2y v2z      |   4 byte, 4 byte, 4 byte
+        vertex v3x v3y v3z      |   4 byte, 4 byte, 4 byte
+    endloop
+endfacet
+                                |   2 byte (attribute byte count)
+...
