@@ -1,7 +1,7 @@
 #include <iostream>
-#include "VertexPart.h"
+#include "FacetPart.h"
 
 int main(){
-    VertexPart binaryPart("test/xyzCalibration_cube.stl");
+    FacetPart binaryPart("test/xyzCalibration_cube.stl");
     binaryPart.printPart();
 }
